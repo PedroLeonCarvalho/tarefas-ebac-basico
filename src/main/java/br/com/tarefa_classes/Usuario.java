@@ -1,5 +1,5 @@
-package br.com.ebac;
-
+package br.com.tarefa_classes;
+//Esta Classe representa um usuário de algum sistema
 public class Usuario {
 
     private String nome;
