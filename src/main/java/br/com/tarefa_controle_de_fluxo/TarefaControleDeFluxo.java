@@ -30,7 +30,7 @@ public class TarefaControleDeFluxo {
         OptionalDouble mediaComoOptionalDouble = listaDeNotas.stream().mapToDouble(Integer::doubleValue)
                 .average();
 
-        Double media = mediaComoOptionalDouble.getAsDouble();
+       double media = mediaComoOptionalDouble.getAsDouble();
 
         if (media >= 7) {
             System.out.println( "Aprovado");
