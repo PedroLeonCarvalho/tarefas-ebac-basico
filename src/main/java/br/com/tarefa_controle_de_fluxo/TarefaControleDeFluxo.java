@@ -16,26 +16,44 @@ public class TarefaControleDeFluxo {
 
     public static void main(String[] args) {
 
-        System.out.println("Digite o valor das notas");
+        Integer somaNotas = 0;
+
+        System.out.println("Digite o valor das 4 notas");
 
         Scanner s = new Scanner(System.in);
-
-        ArrayList<Integer> listaDeNotas = new ArrayList<>();
+        //nova implementação
 
         for (int i =0; i <4 ; i++) {
-            int valor = s.nextInt();
-            listaDeNotas.add(valor);
+            Integer notas = s.nextInt();
+
+            somaNotas += notas ;
+
         }
 
-        OptionalDouble mediaComoOptionalDouble = listaDeNotas.stream().mapToDouble(Integer::doubleValue)
-                .average();
+        double media = somaNotas/4;
 
-       double media = mediaComoOptionalDouble.getAsDouble();
 
+// implementação antiga
+//        ArrayList<Integer> listaDeNotas = new ArrayList<>();
+//
+//        for (int i =0; i <4 ; i++) {
+//
+//            int valor = s.nextInt();
+//            listaDeNotas.add(valor);
+//        }
+//
+//        OptionalDouble mediaComoOptionalDouble = listaDeNotas.stream().mapToDouble(Integer::doubleValue)
+//                .average();
+//
+//       double media = mediaComoOptionalDouble.getAsDouble();
+//
         if (media >= 7) {
             System.out.println( "Aprovado");
         } else if (media >=5) {
             System.out.println("Em recuperação");
         } else System.out.println("Reprovado");
+
+
+
     }
 }
