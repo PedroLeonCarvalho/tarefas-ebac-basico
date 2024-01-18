@@ -24,7 +24,7 @@ public class TarefaControleDeFluxo {
         //nova implementação
 
         for (int i =0; i <4 ; i++) {
-            Integer notas = s.nextInt();
+            int notas = s.nextInt();
 
             somaNotas += notas ;
 
