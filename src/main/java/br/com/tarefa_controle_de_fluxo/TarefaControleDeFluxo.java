@@ -34,7 +34,7 @@ public class TarefaControleDeFluxo {
 
         if (media >= 7) {
             System.out.println( "Aprovado");
-        } else if (media >=5 && media  < 7) {
+        } else if (media >=5) {
             System.out.println("Em recuperação");
         } else System.out.println("Reprovado");
     }
