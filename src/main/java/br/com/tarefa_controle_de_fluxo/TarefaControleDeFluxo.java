@@ -27,11 +27,8 @@ public class TarefaControleDeFluxo {
             int notas = s.nextInt();
 
             somaNotas += notas ;
-
         }
-
         double media = somaNotas/4;
-
 
 // implementação antiga
 //        ArrayList<Integer> listaDeNotas = new ArrayList<>();
