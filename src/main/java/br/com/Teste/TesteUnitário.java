@@ -15,8 +15,7 @@ public class TesteUnitário {
 
 
         assertEquals(0, listaM.size());
-        assertEquals(5, listaM.get(0));
-
+        assertEquals(5, listaM.size());
     }
 
 
@@ -28,5 +27,5 @@ public class TesteUnitário {
 
         }
 
-    }
+
 
