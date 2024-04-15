@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 public class Streams {
 
     public static void main(String[] args) throws IOException {
+
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
         String nomes = reader.readLine();
