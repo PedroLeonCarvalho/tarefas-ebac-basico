@@ -1,4 +1,4 @@
-package br.com.PROJETO_1.domain;
+package br.com.PROJETO_continuacao.domain;
 
 import java.util.Objects;
 
@@ -20,6 +20,9 @@ public class Cliente  {
         this.cidade = cidade;
         this.estado = estado;
 
+    }
+
+    public Cliente() {
     }
 
     public String getNome() {

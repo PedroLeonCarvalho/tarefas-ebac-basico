@@ -1,6 +1,6 @@
-package br.com.PROJETO_1.dao;
+package br.com.PROJETO_continuacao.dao;
 
-import br.com.PROJETO_1.domain.Cliente;
+import br.com.PROJETO_continuacao.domain.Cliente;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -26,7 +26,7 @@ public class ClienteMapDAO implements ICLienteDAO {
 
 
     @Override
-    public void atualizar (Cliente cliente) {
+    public Cliente atualizar (Cliente cliente) {
         Cliente clienteCadastrado = this.map.get(cliente.getCpf());
         if (clienteCadastrado != null) {
             clienteCadastrado.setNome(cliente.getNome());
@@ -36,6 +36,7 @@ public class ClienteMapDAO implements ICLienteDAO {
             clienteCadastrado.setCidade(cliente.getCidade());
             clienteCadastrado.setEstado(cliente.getEstado());
         }
+        return cliente;
     }
     @Override
     public void excluir(Long cpf) {

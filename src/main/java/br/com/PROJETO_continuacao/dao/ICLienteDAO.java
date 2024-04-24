@@ -1,6 +1,6 @@
-package br.com.PROJETO_1.dao;
+package br.com.PROJETO_continuacao.dao;
 
-import br.com.PROJETO_1.domain.Cliente;
+import br.com.PROJETO_continuacao.domain.Cliente;
 
 import java.util.Collection;
 
@@ -8,8 +8,7 @@ public interface ICLienteDAO {
 
 public Boolean cadastrar(Cliente cliente) ;
 public void excluir  (Long cpf);
-public void atualizar(Cliente cliente);
-
+public Cliente atualizar(Cliente cliente);
 public Cliente consultar (Long cpf);
 
     public Collection<Cliente> buscarTodos();

@@ -1,12 +1,10 @@
-package br.com.PROJETO_1;
+package br.com.PROJETO_continuacao;
 
-import br.com.PROJETO_1.dao.ClienteMapDAO;
-import br.com.PROJETO_1.dao.ICLienteDAO;
-import br.com.PROJETO_1.domain.Cliente;
+import br.com.PROJETO_continuacao.dao.ClienteMapDAO;
+import br.com.PROJETO_continuacao.dao.ICLienteDAO;
+import br.com.PROJETO_continuacao.domain.Cliente;
 
 import javax.swing.*;
-
-import java.util.Arrays;
 
 import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
 
