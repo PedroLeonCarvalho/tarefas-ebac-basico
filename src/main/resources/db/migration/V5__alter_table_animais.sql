@@ -1,0 +1,4 @@
+
+ALTER TABLE animal ALTER COLUMN data_entrada DATE;
+ALTER TABLE animal ALTER COLUMN data_adocao DATE;
+ALTER TABLE animal ALTER COLUMN data_obto DATE;
